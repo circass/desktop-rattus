@@ -127,6 +127,7 @@
                 <Dependency>libglade-devel</Dependency>
                 <Dependency>libgnome-keyring-devel</Dependency>
                 <Dependency>libnotify-devel</Dependency>
+                <Dependency>hal-libs</Dependency>
             </BuildDependencies>
             <Patches>
                 <Patch>disable-gconf-schemas-install.patch</Patch>
@@ -142,6 +143,7 @@
                 <Dependency>libgnome-keyring</Dependency>
                 <Dependency>gtk2</Dependency>
                 <Dependency>libnotify</Dependency>
+                <Dependency>hal-libs</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="config">/etc/gconf</Path>
@@ -1339,6 +1341,7 @@
             <Description xml:lang="tr">exo, os-cillation tarafından geliştirilen Xfce eklenti kitaplığıdır. Xfce masaüstü ortamını hedefleyen az kitaplıkla gelirken, exo uygulama geliştirmeyi hedefliyor.</Description>
             <Archive type="tarbz2" sha1sum="31604e576de3443920af68e2dd6416e1ff670430">http://archive.xfce.org/src/xfce/exo/0.8/exo-0.8.0.tar.bz2</Archive>
             <BuildDependencies>
+                <Dependency>hal-devel</Dependency>
                 <Dependency>atk-devel</Dependency>
                 <Dependency>cairo-devel</Dependency>
                 <Dependency>pango-devel</Dependency>
@@ -1357,6 +1360,7 @@
         <Package>
             <Name>exo</Name>
             <RuntimeDependencies>
+                <Dependency>hal</Dependency>
                 <Dependency>atk</Dependency>
                 <Dependency>cairo</Dependency>
                 <Dependency>pango</Dependency>
@@ -1637,6 +1641,7 @@
             <Icon>Thunar</Icon>
             <Archive type="tarbz2" sha1sum="104b25b38130e008df2116e83e6ab20cd33e4561">http://archive.xfce.org/src/xfce/thunar/1.4/Thunar-1.4.0.tar.bz2</Archive>
             <BuildDependencies>
+                <Dependency>hal-devel</Dependency>
                 <Dependency>gtk2-devel</Dependency>
                 <Dependency>jpeg-devel</Dependency>
                 <Dependency>freetype-devel</Dependency>
@@ -1667,6 +1672,7 @@
         <Package>
             <Name>Thunar</Name>
             <RuntimeDependencies>
+                <Dependency>hal</Dependency>
                 <Dependency>gtk2</Dependency>
                 <Dependency>gtk2-engines-murrine</Dependency>
                 <Dependency>gnome-mount</Dependency>
@@ -2878,6 +2884,7 @@
                 <Dependency version="4.10.0">xfce4-panel-devel</Dependency>
                 <Dependency>libglade-devel</Dependency>
                 <Dependency>polkit-devel</Dependency>
+                <Dependency>hal-devel</Dependency>
                 <Dependency>ConsoleKit-devel</Dependency>
                 <Dependency>gtk2-devel</Dependency>
             </BuildDependencies>
@@ -2898,6 +2905,7 @@
                 <Dependency>libglade</Dependency>
                 <Dependency>polkit</Dependency>
                 <Dependency>ConsoleKit</Dependency>
+                <Dependency>hal</Dependency>
                 <Dependency>gtk2</Dependency>
                 <Dependency>upower</Dependency>
             </RuntimeDependencies>
@@ -4770,6 +4778,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
                 <Dependency versionFrom="1.2.2">libisofs-devel</Dependency>
                 <Dependency versionFrom="4.10.0">libxfcegui4-devel</Dependency>
                 <Dependency versionFrom="1.2.0">thunar-vfs-devel</Dependency>
+                <Dependency>hal-devel</Dependency>
                 <Dependency>librsvg-devel</Dependency>
                 <Dependency>gstreamer-devel</Dependency>
             </BuildDependencies>
@@ -4792,6 +4801,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
                 <Dependency>gdk-pixbuf</Dependency>
                 <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
                 <Dependency>gst-plugins-base</Dependency>
+                <Dependency>hal</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
@@ -7087,6 +7097,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
             <BuildDependencies>
                 <Dependency versionFrom="1.4.0">Thunar-devel</Dependency>
                 <Dependency versionFrom="0.8.0">exo-devel</Dependency>
+                <Dependency>hal-devel</Dependency>
                 <Dependency>jpeg-devel</Dependency>
                 <Dependency>gtk2-devel</Dependency>
                 <Dependency>gamin-devel</Dependency>
@@ -7106,6 +7117,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
             <RuntimeDependencies>
                 <Dependency versionFrom="1.4.0">Thunar</Dependency>
                 <Dependency versionFrom="0.8.0">exo</Dependency>
+                <Dependency>hal</Dependency>
                 <Dependency>jpeg</Dependency>
                 <Dependency>gtk2</Dependency>
                 <Dependency>gamin</Dependency>
