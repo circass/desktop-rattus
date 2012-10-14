@@ -18,6 +18,7 @@
             <Dependency>libglade-devel</Dependency>
             <Dependency>libgnome-keyring-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
+	    <Dependency>hal-libs</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>disable-gconf-schemas-install.patch</Patch>
@@ -33,6 +34,7 @@
             <Dependency>libgnome-keyring</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>libnotify</Dependency>
+	    <Dependency>hal-libs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/gconf</Path>

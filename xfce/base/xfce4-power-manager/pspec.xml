@@ -25,6 +25,7 @@
             <Dependency version="4.10.0">xfce4-panel-devel</Dependency>
             <Dependency>libglade-devel</Dependency>
             <Dependency>polkit-devel</Dependency>
+            <Dependency>hal-devel</Dependency>
             <Dependency>ConsoleKit-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
@@ -45,6 +46,7 @@
             <Dependency>libglade</Dependency>
             <Dependency>polkit</Dependency>
             <Dependency>ConsoleKit</Dependency>
+            <Dependency>hal</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>upower</Dependency>
         </RuntimeDependencies>

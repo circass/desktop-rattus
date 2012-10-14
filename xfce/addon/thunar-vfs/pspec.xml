@@ -17,6 +17,7 @@
         <BuildDependencies>
             <Dependency versionFrom="1.4.0">Thunar-devel</Dependency>
             <Dependency versionFrom="0.8.0">exo-devel</Dependency>
+            <Dependency>hal-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gamin-devel</Dependency>
@@ -36,6 +37,7 @@
         <RuntimeDependencies>
             <Dependency versionFrom="1.4.0">Thunar</Dependency>
             <Dependency versionFrom="0.8.0">exo</Dependency>
+            <Dependency>hal</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gamin</Dependency>
