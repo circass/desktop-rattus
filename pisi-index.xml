@@ -42,7 +42,7 @@
             </Packager>
             <License>GPLv2</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.gnome</PartOf>
             <Summary xml:lang="en">GNOME mount tools</Summary>
             <Summary xml:lang="tr">GNOME disk bağlama araçları</Summary>
             <Description xml:lang="en">The gnome-mount package contains programs related to mounting, unmounting and ejecting storage devices.</Description>
@@ -3603,7 +3603,7 @@
             </Packager>
             <License>GPLv2</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.xfce.base</PartOf>
             <Summary xml:lang="en">Xfce basic utility library</Summary>
             <Summary xml:lang="tr">Xfce için basit yardımcı uygulama kitaplığı</Summary>
             <Description xml:lang="en">Libxfce4util is a basic utility non-GUI functions for Xfce desktop environment.</Description>
@@ -4233,7 +4233,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
             </Packager>
             <License>GPLv2</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.xfce.addon</PartOf>
             <Summary xml:lang="en">a download manager</Summary>
             <Summary xml:lang="tr">İndirme Yöneticisi</Summary>
             <Description xml:lang="en">Eatmonkey is a download manager that works exclusively with aria2, the ultra fast download utility.</Description>
@@ -4753,7 +4753,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
             </Packager>
             <License>GPLv2</License>
             <IsA>app:gui</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.xfce.addon</PartOf>
             <Summary xml:lang="en">A modern simple media player</Summary>
             <Summary xml:lang="tr">Basit ve modern bir medya oynatıcı</Summary>
             <Description xml:lang="en">Parole is a modern simple media player based on the GStreamer framework and written to fit well in the Xfce desktop. Parole is designed with simplicity, speed and resource usage in mind.</Description>
@@ -6614,7 +6614,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
             </Packager>
             <License>LLGPL-2.1</License>
             <IsA>library</IsA>
-            <PartOf>unknown</PartOf>
+            <PartOf>desktop.xfce.addon</PartOf>
             <Summary xml:lang="en">GNOME 2 bindings for Ruby</Summary>
             <Summary xml:lang="tr">Ruby için GNOME 2 bağlayıcıları</Summary>
             <Description xml:lang="en">Ruby-gtk2 is a set of bindings for the GNOME-2.x libraries to use from Ruby.</Description>
@@ -7619,6 +7619,254 @@ thunar-volman is installed and configured properly, and you plug in your digical
                 <Comment>First release.</Comment>
                 <Name>Ertuğrul Erata</Name>
                 <Email>ertugrulerata@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libburn</Name>
+            <Homepage>http://libburnia-project.org</Homepage>
+            <Packager>
+                <Name>Mete Bilgin</Name>
+                <Email>metebilgin48@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <IsA>app:console</IsA>
+            <PartOf>hardware.optical</PartOf>
+            <Summary xml:lang="en">A library for reading, mastering and writing optical discs</Summary>
+            <Summary xml:lang="tr">Optik diskleri okumak, idare etmek ve yazmak için kitaplıklar</Summary>
+            <Description xml:lang="en">Libburn is an open-source library for reading, mastering and writing optical discs.</Description>
+            <Description xml:lang="tr">libburn, optik diskleri okumak, idare etmek ve yazmak için yazılmış, açık kaynak kodlu bir kitaplıktır.</Description>
+            <Archive type="targz" sha1sum="a8f41be52a9086c4ca38e2a1d9aecc0d3a6ff04a">http://files.libburnia-project.org/releases/libburn-1.2.2.tar.gz</Archive>
+            <SourceURI>library/libburn/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libburn</Name>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>libburn-devel</Name>
+            <Summary xml:lang="en">Development files for libburn</Summary>
+            <Summary xml:lang="tr">libburn için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="11">libburn</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig/libburn-1.pc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="11">
+                <Date>2012-06-10</Date>
+                <Version>1.2.2</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Erdinç Gültekin</Name>
+                <Email>erdincgultekin@gmail.com</Email>
+            </Update>
+            <Update release="10">
+                <Date>2011-03-02</Date>
+                <Version>1.0.2</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Mete Bilgin</Name>
+                <Email>mbilgin@pardus.org.tr</Email>
+            </Update>
+            <Update release="9">
+                <Date>2010-11-03</Date>
+                <Version>0.8.8</Version>
+                <Comment>* Version bump.
+                * Split devel package.</Comment>
+                <Name>Mete Bilgin</Name>
+                <Email>metebilgin48@gmail.com</Email>
+            </Update>
+            <Update release="8">
+                <Date>2010-05-15</Date>
+                <Version>0.8.0</Version>
+                <Comment>* Version bump.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="7">
+                <Date>2009-08-31</Date>
+                <Version>0.7.0</Version>
+                <Comment>* Version bump:
+                - his release fixes a bug with U3 memory sticks. It introduces new API calls to inquire the list of supported media from a drive, and an API call to reduce drive noise if no i/o is intended for a while.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="6">
+                <Date>2009-07-17</Date>
+                <Version>0.6.8</Version>
+                <Comment>* Version bump.
+                * Add IsA tag; it is also console application.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="5">
+                <Date>2009-06-11</Date>
+                <Version>0.6.6</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2009-03-24</Date>
+                <Version>0.6.4</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2009-02-14</Date>
+                <Version>0.6.0</Version>
+                <Comment>* Version bump.
+                * Added translations.xml.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2008-12-21</Date>
+                <Version>0.5.8</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2008-11-10</Date>
+                <Version>0.5.4</Version>
+                <Comment>First release.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libisofs</Name>
+            <Homepage>http://libburnia-project.org</Homepage>
+            <Packager>
+                <Name>Mete Bilgin</Name>
+                <Email>metebilgin48@gmail.com</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>hardware.optical</PartOf>
+            <Summary xml:lang="en">A library for creating ISO disc images</Summary>
+            <Summary xml:lang="tr">ISO kalıbı oluşturmak için gerekli kitaplıklar</Summary>
+            <Description xml:lang="en">libisofs is a library that handles creating ISO disc image files. It is intended to work together with libburn to write these images to discs</Description>
+            <Description xml:lang="tr">libisofs, ISO kalıbını oluşturmak için gerekli kitaplıkları içeren pakettir. Bu paket ayrıca Libburn&apos;u kullanarak, ISO kalıplarını CD, DVD veya benzeri disklere yazdırmanıza olanağı sağlar.</Description>
+            <Archive type="targz" sha1sum="0cf70862ed209adb251462d5d5077f8517fbeb75">http://files.libburnia-project.org/releases/libisofs-1.2.2.tar.gz</Archive>
+            <SourceURI>library/libisofs/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libisofs</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>libisofs-devel</Name>
+            <Summary xml:lang="en">Development files for libisofs</Summary>
+            <Summary xml:lang="tr">libisofs için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="9">libisofs</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="doc">/usr/share/doc/libisofs/Tutorial</Path>
+                <Path fileType="doc">/usr/share/doc/libisofs/checksums.txt</Path>
+                <Path fileType="doc">/usr/share/doc/libisofs/susp_aaip_2_0.txt</Path>
+                <Path fileType="doc">/usr/share/doc/libisofs/susp_aaip_isofs_names.txt</Path>
+                <Path fileType="doc">/usr/share/doc/libisofs/zisofs_format.txt</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="9">
+                <Date>2012-06-10</Date>
+                <Version>1.2.2</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Erdinç Gültekin</Name>
+                <Email>erdincgultekin@gmail.com</Email>
+            </Update>
+            <Update release="9">
+                <Date>2011-01-27</Date>
+                <Version>1.0.0</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Mete Bilgin</Name>
+                <Email>metebilgin48@gmail.com</Email>
+            </Update>
+            <Update release="8">
+                <Date>2010-11-02</Date>
+                <Version>0.6.32</Version>
+                <Comment>Split devel package.</Comment>
+                <Name>Mete Bilgin</Name>
+                <Email>metebilgin48@gmail.com</Email>
+            </Update>
+            <Update release="7">
+                <Date>2010-05-15</Date>
+                <Version>0.6.32</Version>
+                <Comment>* Version bump.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="6">
+                <Date>2009-10-09</Date>
+                <Version>0.6.24</Version>
+                <Comment>* Version bump:
+                - Fixes a bug which could cause the loss of blanks in file names when a new session got added to an ISO image.
+                - With names shorter than 251 characters this happened only to trailing blanks.
+                * Don&apos;t take blank doc file to the package.
+                * Add missing copyright file.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="5">
+                <Date>2009-08-31</Date>
+                <Version>0.6.22</Version>
+                <Comment>* Version bump:
+                - can record MD5 checksums for the whole session and for each single data file.
+                - Checksum tags allow to verify superblock and directory tree before importing them.
+                - The content of data files can be verified.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="4">
+                <Date>2009-06-11</Date>
+                <Version>0.6.20</Version>
+                <Comment>* Version bump.
+                * Remove runtime dependencies. Not required.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="3">
+                <Date>2009-03-24</Date>
+                <Version>0.6.16</Version>
+                <Comment>* Version bump.
+                * Added translations.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2008-12-21</Date>
+                <Version>0.6.12</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2008-11-10</Date>
+                <Version>0.6.10</Version>
+                <Comment>First release.</Comment>
+                <Name>Gökmen Görgen</Name>
+                <Email>gkmngrgn@gmail.com</Email>
             </Update>
         </History>
     </SpecFile>
