@@ -11,12 +11,17 @@ Global {
     transparent=0
     tintcolor=#000000
     alpha=0
+    autohide=0
+    heightwhenhidden=2
     setdocktype=1
     setpartialstrut=1
     usefontcolor=1
+    fontsize=10
     fontcolor=#ffffff
+    usefontsize=0
     background=1
-    backgroundfile=@prefix@/share/lxpanel/images/background.png
+    backgroundfile=/usr/share/lxpanel/images/background-anka.png
+    iconsize=24
 }
 
 Plugin {
@@ -29,7 +34,7 @@ Plugin {
 Plugin {
     type = menu
     Config {
-        image=@prefix@/share/lxde/images/lxde-icon.png
+        image=/usr/share/lxde/images/PardusAnkaLogo.png
         system {
         }
         separator {
@@ -53,7 +58,10 @@ Plugin {
             id=pcmanfm.desktop
         }
         Button {
-            id=firefox.desktop
+            id=/usr/share/applications/mozillafirefox.desktop
+        }
+        Button {
+            id=/usr/share/applications/kde4/package-manager.desktop
         }
     }
 }
@@ -68,8 +76,10 @@ Plugin {
 Plugin {
     type = wincmd
     Config {
+        image=window-manager
         Button1=iconify
         Button2=shade
+        Toggle=0
     }
 }
 
@@ -97,24 +107,18 @@ Plugin {
     Config {
         tooltips=1
         IconsOnly=0
-        AcceptSkipPager=1
-        ShowIconified=1
-        ShowMapped=1
         ShowAllDesks=0
         UseMouseWheel=1
         UseUrgencyHint=1
         FlatButton=0
         MaxTaskWidth=150
         spacing=1
+        GroupedTasks=0
     }
 }
 
 Plugin {
     type = netstat
-}
-
-Plugin {
-    type = cpu
 }
 
 Plugin {
@@ -126,8 +130,14 @@ Plugin {
     Config {
         ClockFmt=%R
         TooltipFmt=%A %x
-        BoldFont=0
+        BoldFont=1
+        IconOnly=0
+        CenterText=0
     }
+}
+
+Plugin {
+    type = cpu
 }
 
 Plugin {
@@ -138,4 +148,6 @@ Plugin {
         }
     }
 }
+
+
 
